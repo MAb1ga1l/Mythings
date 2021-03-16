@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Se utiliza un recyclerview ya que es una vista que hacepta
+    más vistas. Además sólo crea las vistas que ve el usuario
+    de tal forma que va reciclando las vistas que creo-->
+
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabla_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</androidx.recyclerview.widget.RecyclerView>
