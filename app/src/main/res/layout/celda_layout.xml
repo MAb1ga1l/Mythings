@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp">
@@ -13,8 +12,23 @@
         android:text="@string/label_nombre_tabla" />
 
     <TextView
-        android:id="@+id/precio_thing"
-        android:layout_width="match_parent"
+        android:id="@+id/num_serie_thing"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/label_precio" />
-</LinearLayout>
+        android:layout_below="@+id/nombre_thing"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/num_serie_thing"
+        android:text="@string/label_num_serie"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/num_serie_thing" />
+
+    <TextView
+        android:id="@+id/precio_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre_thing"
+        android:layout_alignParentRight="true"
+        android:text="@string/label_precio"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

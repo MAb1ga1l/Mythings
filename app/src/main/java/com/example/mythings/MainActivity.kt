@@ -22,10 +22,12 @@ import android.util.Log
     }
 
     override fun onThingSeleccionada(cosa: Cosa) {
-        Log.d(TAG,"MainActivyty.onCosaSeleccionada recibió${cosa.nombreC} ${cosa.valorP}")
-        val fragment = cosaFragment.nuevaInstancia(cosa)
+        //Log.d(TAG,"MainActivyty.onCosaSeleccionada recibió${cosa.nombreC} ${cosa.valorP}")
+        val fragment = CosaFragment.nuevaInstancia(cosa)
         //fragment.cosaAMostrar(cosa)
         //vamos a reemplazar pero el addToBackStack se pone para exista la interacción entre los dos fragmentos
         supportFragmentManager.beginTransaction().replace(R.id.contenedor_fragment,fragment).addToBackStack(null).commit()
     }
+
+
 }
